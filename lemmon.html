@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="lemmon-slider.js"></script>
+<script>
+window.onload = function(){
+    
+    $( '#slider1' ).lemmonSlider();
+
+}
+
+</script>
+<script>
+
+</script>
+
+<style>
+body {
+  margin:0;
+  overflow: hidden;
+}
+/* Necessary CSS */
+.slider    { overflow:hidden; position:relative;height:800px;top: 50%;margin-top: -400px;}
+.slider ul { margin:0; padding:0; }
+.slider li { float:left; margin:0; list-style:none; }
+/* IE6 issues */
+.slider ul { width:100%; }
+img {
+    height:100%;
+}
+
+@media only screen and (max-width: 480px) {
+    img {
+         height: 200px;
+      }
+    .slider { overflow:hidden; position:relative;height:200px;top: 50%;margin-top: -100px;
+      }
+    .controls {
+      position: absolute;
+      }
+}
+
+.contain {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+}
+.controls {
+  position: absolute;
+}
+</style>
+</head>
+<body>
+  <div class="contain">
+<div id="slider1" class="slider">
+    <ul>
+   <li><img src="http://www.hhhhold.com/1280x800"></li>
+   <li><img src="http://www.hhhhold.com/1400x800"></li>
+   <li><img src="http://www.hhhhold.com/1090x800"></li>
+   <li><img src="http://www.hhhhold.com/600x800"></li>
+   <li><img src="http://www.hhhhold.com/1180x800"></li>
+   <li><img src="http://www.hhhhold.com/1480x800"></li>
+   <li><img src="http://www.hhhhold.com/1460x800"></li>
+   <li><img src="http://www.hhhhold.com/1080x800"></li>
+   <li><img src="http://www.hhhhold.com/640x800"></li>
+   <li><img src="http://www.hhhhold.com/1280x800"></li>
+    </ul>
+</div>
+<div class="controls">
+    <a href="#" class="prev-page">Prev Page</a> |
+    <a href="#" class="prev-slide">Prev Slide</a> |
+    <a href="#" class="next-slide">Next Slide</a> |
+    <a href="#" class="next-page">Prev Page</a>
+</div>
+</div>
+</body>
+</html>
